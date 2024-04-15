@@ -131,6 +131,7 @@ body {
     align-items: center;
 }
 
+
 .trabalhoTexto {
     width: 50%;
     height: 100%;
@@ -139,9 +140,11 @@ body {
     flex-direction: column;
 }
 
+
 .trabalhoTexto p{
 font-size: 25px;
 }
+
 
 .trabalhoTexto h1{
     font-size: 35px;
