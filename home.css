@@ -2,68 +2,82 @@ body {
     display: contents;
     width: 100%;
     height: 100%;
-}
-.header{
-    width: min-content;
-    height: max-content;
-    display: contents;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
-.navBar{
-    display: flex;
-    background-color: rgb(15, 100, 38);
-    color: white;
-    justify-content: space-around;
+nav{
     width: 100%;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: #0e420c;
+}
+
+.logoEmpresa{
     height: 100%;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 18px;
 }
 
+.container-links{
+    height: 100%;
+    width: 50%;
 
-.titulo{
-
-    font-weight: 600;
-    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
 }
-
 
 .links{
-    width: 300px;
-    list-style: none;
+    height: 80%;
+    width: 50%;
+
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+}
+
+.links2{
+    height: 80%;
+    width: 30%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.links ul, .links2 ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
     
-}
-
-
-.links a{
-    color: white;
-    text-decoration: none;
-}
-
-
-.links2 {
-    width: 300px;
-    list-style: none;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: space-around;
+
+    color: white;
 }
 
-
-.links2 a{
+.links a, .links2 a{
     color: white;
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-.links a:hover{
-    color: aqua;
-}
-
-
-.links2 a:hover {
+.links a:hover, .links2 a:hover{
     color: aqua;
 }
 
@@ -78,8 +92,7 @@ body {
 
 .banner p{
     font-size: 60px;
-    color: rgba(255, 255, 255, 0.719);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -148,4 +161,44 @@ font-size: 25px;
 .trabalhoTexto h1{
     font-size: 35px;
     margin-left: 25%;
+}
+
+.nos {
+    background-image: url(./simulador-financeiro/imagem/fundo.jpg);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.informacaoNos {
+    width: 85%;
+    height: 70%;
+    background-color: #051f0486;
+
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+.informacaoNos p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer{
+    height: 70px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 20px;
+    background-color: #0e420c;
 }

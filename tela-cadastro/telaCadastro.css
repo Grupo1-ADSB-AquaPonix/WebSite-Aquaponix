@@ -5,7 +5,7 @@ body{
 }
 
 article{
-    height: 794px;
+    height: 800px;
     width: 100%;
 
     display: flex;
@@ -17,7 +17,7 @@ article{
 }
 
 .container-formulario{
-    height: 794px;
+    height: 100%;
     width: 60%;
 
     display: flex;
