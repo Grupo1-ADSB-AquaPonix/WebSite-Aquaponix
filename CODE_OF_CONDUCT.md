@@ -30,10 +30,10 @@ Na hora de fazer o commit para este repositório, você deve seguir à essas reg
 ``Implementação: 'Método ainda não implementado no sistema'``
 > Utilizado quando o desenvolvedor for fazer a implementação de uma nova funcionalidade no projeto
 
-``Remoção: 'Exclusão de algum arquivo do sistema``
-> Deve-se usar está estrutura quando você subir uma alteração no repositório que implique diretamente na remoção de algum arquivo
+``Remoção: 'Exclusão de algum arquivo do sistema'``
+> Deve-se usar esta estrutura quando você subir uma alteração no repositório que implique diretamente na remoção de algum arquivo
 
-Caso em seu diretorio local exista mais de uma atualizacao que se encaixe em diferentes tipos de commit, haverá a necessidade de subir um commit por vez.
+Caso em seu diretório local exista mais de uma atualizacão que se encaixe em diferentes tipos de commit, haverá a necessidade de subir um commit por vez.
 
 ### Exemplo
 
