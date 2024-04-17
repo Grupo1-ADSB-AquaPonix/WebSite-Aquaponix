@@ -151,3 +151,88 @@
     </footer>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+
+    const graBarra = document.getElementById('graficoBarra');
+    graBarra.width = "100%"
+    new Chart(graBarra, {
+        type: 'bar',
+        data: {
+            // valores do eixo X
+            labels: ['01/04', '02/04', '03/04', '04/04', '05/04', '06/04', '07/04'],    
+            datasets: [
+                {
+                    label: 'Temperatura média',
+                    // dados que a barra vai se basear para definir seu tamanho
+                    data: [14, 17, 20, 16, 18.5, 19.5, 21],
+                    backgroundColor: "#3CA6A6",
+                    
+                },
+                {
+                    label: 'Luminosidade média',
+                    // dados que a barra vai se basear para definir seu tamanho
+                    data: [44, 57, 60, 56, 61, 71, 49],
+                    backgroundColor: "#024959",
+                },
+            ]
+        },
+        options: {}
+    })
+
+    const graLinha = document.getElementById('graficoLinha');
+    graLinha.width = "100%"
+    new Chart(graLinha, {
+        type: 'line',
+        data: {
+            // valores do eixo X
+            labels: ['06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00',],
+            datasets: [
+                {
+                    // dados que a linha vai se basear para percorrer o gráfico
+                    data: [17, 19, 20, 21, 18.5, 17.5, 20, 22, 18],
+                    borderColor: "#2400FF",
+                    backgroundColor: "#2400FF",
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            // scale defini o valor minimo e máximo do eixo Y
+            scale: {
+                y: {
+                    min: 10,
+                    max: 30
+                }
+            }
+        }
+    });
+
+    const graLinha2 = document.getElementById('graficoLinha2');
+    graLinha2.width = "100%"
+    new Chart(graLinha2, {
+        type: 'line',
+        data: {
+            // valores do eixo X
+            labels: ['06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00',],
+            datasets: [
+                {
+                    // dados que a linha vai se basear para percorrer o gráfico
+                    data: [17, 19, 20, 21, 18.5, 17.5, 20, 22, 18],
+                    borderColor: "#2400FF",
+                    backgroundColor: "#2400FF",
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            // scale defini o valor minimo e máximo do eixo Y
+            scale: {
+                y: {
+                    min: 10,
+                    max: 30
+                }
+            }
+        }
+    });
+</script>
