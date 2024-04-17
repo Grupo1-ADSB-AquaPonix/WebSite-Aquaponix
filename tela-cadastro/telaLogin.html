@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Cadastro</title>
+    <title>Tela de Login</title>
     <link rel="stylesheet" href="./telaLogin.css">
     <link rel="stylesheet" href="../templateNavBar.css">
     <link rel="stylesheet" href="../templateFooter.css">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav id="navlogin">
         <div class="logoEmpresa">
             <h1>AQUAPONIX</h1>
         </div>
@@ -32,13 +32,15 @@
             </div>
             <div class="links2">
                 <ul>
-                    <a href="#">
-                        <li>Login</li>
-                    </a>
-                    <li>|</li>
                     <li style="font-weight: bolder; color: black;">
-                        <ins>Cadastro</ins>
+                        <ins>Login</ins> 
                     </li>
+                    <li>|</li>
+                    <a href="#">
+                        <li>
+                            Cadastro
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -46,18 +48,27 @@
     <article>
         <div class="container-formulario">
             <div class="box-title">
-                <h2 id="div_title">CADASTRO EMPRESARIAL</h2>
+                <h2 id="div_title">Login</h2>
             </div>
             <div class="box-form" id="div_form">
-                <input type="text" placeholder="Nome da empresa">
-                <input type="text" placeholder="E-mail">
-                <input type="text" placeholder="CNPJ">
-                <input type="text" placeholder="1-Telefone Fixo/Celular">
-                <input type="text" placeholder="2-Telefone Fixo/Celular">
+                <input type="text" placeholder="E-mail ou CPF">
                 <input type="text" placeholder="Senha">
-                <input type="text" placeholder="Confirmar senha">
-                <button class="btn-criarconta">CONTINUAR</button>
-        </div>
+                     <div class="boxform2">
+                         <button class="btn-Cadastrar"><b>Cadastrar</b></button>
+                         <button class="btn-Entrar">Entrar</button>
+                    </div>
+                <div class="boxform3">
+                
+                 </div>
+            </div>
+
+        
+
+        <div class="senha">
+            <div class="box-esqueceusenha">
+                <h3 id="div_title">esqueceu sua senha?</h3>
+            </div>
+        
     </article>
     <footer>
         <span>
