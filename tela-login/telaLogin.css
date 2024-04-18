@@ -20,59 +20,34 @@ body {
 .inputs {
     background-color: blue;
     display: flex;
-    align-items: center; /* Centralizando os inputs */
+    justify-content: flex-start;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../imagem/horta-piscina.png');
 }
 
-.botoes{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+#navlogin{
+    position: relative;
+
 }
 
-.iptn {
-    width: 100%;
-    height: 50px; /* Ajustando a altura do input */
-    border-radius: 5px;
-    border-color: black;
-    padding-left: 5%;
-}
-
-.login {
+.container-formulario{
+    height: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    height: 40%;
-    width: 60%;
-    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.9)
 }
 
-.reset{
-    display: flex;
+.titulo {
     width: 100%;
-    justify-content: space-between;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer {
-    width: 15%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-}
+.inpits
 
-.btn {
-    border-radius: 20px;
-    border: 2px solid #218692;
-    width: 30%;
-    height: 5vh; /* Ajustando a altura dos botões */
-    color: black;
-    margin-left: 30px;
-}
 
-.btn2 {
-    border-radius: 20px;
-    background-color: #218692;
-    width: 30%;
-    height: 5vh; /* Ajustando a altura dos botões */
-    color: white;
-    margin-right: 20px;
-}
