@@ -8,6 +8,15 @@ nav{
     background-color: #026773;
 }
 
+a{
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: white;
+}
+
 .logoEmpresa{
     height: 100%;
     width: 300px;
