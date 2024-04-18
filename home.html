@@ -107,8 +107,8 @@
             <div class="box-formulario-email">
                 <input type="text" placeholder="Seu nome">
                 <input type="text" placeholder="Seu email">
-                <textarea cols="30" rows="10" placeholder="Sua mensagem"></textarea>
-                <button>ENVIAR</button>
+                <textarea cols="30" rows="10" placeholder="Sua mensagem" id="textArea_mensagem"></textarea>
+                <button onclick="mensagem()">ENVIAR </button>
             </div>
         </div>
     </div>
@@ -120,3 +120,9 @@
 </body>
 
 </html>
+
+<script>
+    function mensagem(){
+    alert(`Mensagem enviada!!`)
+    }
+</script>
