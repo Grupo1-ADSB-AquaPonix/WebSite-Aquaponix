@@ -24,104 +24,19 @@ article{
 .container-formulario{
     height: 100%;
     width: 60%;
-
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
-
     background-color: rgba(255, 255, 255, 0.9)
 }
 
-.box-form{
-    height: 40% ;
-    width: 70%;
-
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
-}
-
-.chkSenha {
-    
-}
-
-.box-form input{
-    height: 45px;
-    width: 90%;
-    padding-left: 2%;
-
-    font-size: 14px;
-    border-radius: 5px;
-    background-color: white;
-    border: 2px solid black;
-}
-.boxform2{
-    display: flex;
+.titulo {
     width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    height: 30%;
-    border: 1px solid black;
-    
-    
-
-}
-
-
-.senha {
+    height: 10%;
     display: flex;
     justify-content: center;
-    
-    align-content: center;
+    align-items: center;
 }
 
-.btn-Entrar{
-    height: 60px;
-    width: 200px;
+.inpits
 
-    cursor: pointer;
-    border: none;
-    border-radius: 30px;
-
-    color: white;
-    font-size: 16px;
-    background-color: #026773;
-}
-
-.btn-Entrar:hover{
-    transition: 0.2s;
-    background-color: #00373d;
-}
-
-.btn-Entrar:active{
-    transition: 0.2s;
-    transform: scale(1.02);
-}
-
-.btn-Cadastrar{
-    height: 60px;
-    width: 200px;
-
-    cursor: pointer;
-    border-color: #00373d;
-    border-radius: 30px;
-
-    color:black;
-    font-size: 16px;
-    background-color:white;
-}
-
-.btn-Cadastrar:hover{
-    transition: 0.2s;
-    background-color: white;
-}
-
-.btn-Cadastrar:active{
-    transition: 0.2s;
-    transform: scale(1.02);
-}
 
