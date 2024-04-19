@@ -59,7 +59,7 @@
     </div>
     <div class="informacao" id="aquaponia">
         <div class="box-imagem">
-            <img class="img-sistema" height="100%" src="./imagem/sistema-aquaponico.png">
+            <img class="img-sistema" height="100%" src="./assets/sistema-aquaponico.png">
         </div>
         <div class="conteudo">
             <h1>O que é aquaponia?</h1>
@@ -80,7 +80,7 @@
             </span>
         </div>
         <div class="box-imagem2">
-            <img src="./imagem/simbioso-peixe-planta.png" class="img-sistema2" alt="imagem de um peixe">
+            <img src="./assets/simbioso-peixe-planta.png" class="img-sistema2" alt="imagem de um peixe">
         </div>
     </div>
     <div class="nos" id="sobreNos">
@@ -98,15 +98,15 @@
                 <span>contatoEmpresa@empresa.com</span>
             </div>
             <div class="box-plataforma-contatos">
-                <img src="./imagem/img-instagram.png" height="42px" width="42px" alt="imagem do instagram">
-                <img src="./imagem/img-whatsapp.png" height="42px" width="42px" alt="imagem do whatsapp">
-                <img src="./imagem/img-linkedin.png" height="42px" width="42px" alt="imagem do linkedin">
+                <img src="./assets/img-instagram.png" height="42px" width="42px" alt="imagem do instagram">
+                <img src="./assets/img-whatsapp.png" height="42px" width="42px" alt="imagem do whatsapp">
+                <img src="./assets/img-linkedin.png" height="42px" width="42px" alt="imagem do linkedin">
             </div>
         </div>
         <div class="box-mandar-email">
             <div class="box-formulario-email">
-                <input type="text" placeholder="Seu nome">
-                <input type="text" placeholder="Seu email">
+                <input type="text" id="input_nome" placeholder="Seu nome">
+                <input type="text" id="input_email" placeholder="Seu email">
                 <textarea cols="30" rows="10" placeholder="Sua mensagem" id="textArea_mensagem"></textarea>
                 <button onclick="mensagem()">Enviar Mensagem </button>
             </div>
@@ -123,6 +123,14 @@
 
 <script>
     function mensagem(){
-    alert(`Mensagem enviada!!`)
+        var nome = document.getElementById('input_nome').value;
+        var email = document.getElementById('input_email').value;
+        var mensagem = document.getElementById('textArea_mensagem').value;
+
+        if (nome == '' || email == '' || mensagem == ''){
+            alert('Preencha os campos para enviar sua mensagem')
+        } else{
+            alert('Mensagem Enviada!')
+        }
     }
 </script>
