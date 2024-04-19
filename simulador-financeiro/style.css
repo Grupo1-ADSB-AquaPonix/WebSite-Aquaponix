@@ -2,7 +2,7 @@ body {
     display: contents;
     width: 100%;
     height: 100%;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: sans-serif;
 }
 
 
@@ -88,7 +88,7 @@ button {
 
 #mensagem {
     width: 100%; /* LARGURA DA DIV */
-    gap: 0px; /* ESPAÇAMENTO ENTRE OS ITENS DENTRO DA DIV */
+    gap: 15px; /* ESPAÇAMENTO ENTRE OS ITENS DENTRO DA DIV */
     display: flex; /* TORNANDO ELEMENTOS FLEXIVEIS */
     flex-direction: row; /* DIRECIONAMENTO DA DIV */
     justify-content: center; /* ALINHAMENTO HORIZONTAL */
@@ -128,7 +128,7 @@ h2 {
     border-style: inset;
     border-color: black;
     border-radius: 20px;
-    width: 60%;
+    width: 50%;
 }
 
 .msg2{
