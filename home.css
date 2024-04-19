@@ -37,6 +37,14 @@ body {
     font-size: 18px;
 }
 
+.logoEmpresa a{
+    color: white;
+}
+
+.logoEmpresa a:hover {
+    color: aqua;
+}
+
 .container-links{
     height: 100%;
     width: 50%;

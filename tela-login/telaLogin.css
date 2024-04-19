@@ -17,6 +17,14 @@ body {
     flex-direction: column;
 }
 
+.logoEmpresa a{
+    color: white;
+}
+
+.logoEmpresa a:hover{
+    color: aqua;
+}
+
 .inputs {
     background-color: blue;
     display: flex;
