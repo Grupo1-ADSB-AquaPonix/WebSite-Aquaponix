@@ -14,6 +14,14 @@ article{
     background-image: url('../imagem/horta-piscina.png');
 }
 
+#container-links{
+    width: 35%;
+}
+
+#links2{
+    width: 90%;
+}
+
 .container-formulario{
     height: 100%;
     width: 60%;
