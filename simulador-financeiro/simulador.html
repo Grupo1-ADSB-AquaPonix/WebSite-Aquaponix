@@ -5,11 +5,31 @@
     <!-- METADATAS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CCS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- TITLE -->
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Simulador Financeiro</title>
+    
 </head>
+<nav id="navBar">
+    <div class="logoEmpresa">
+        <h1><a href="../home.html">AQUAPONIX</a></h1>
+    </div>
+    <div class="container-links" id="links">    
+        <div class="links2" id="links2">
+            <ul>
+                <li style="font-weight: bolder; color: black;">
+                    <ins>Simulador</ins> 
+                </li>
+                <li>|</li>
+                <a href="../tela-cadastro/telaCadastro.html"> 
+                    <li> Cadastro </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</nav>
 <body>
     <div class="container">
         <div class="content">
@@ -35,6 +55,12 @@
         </div>
     </div>
 </body>
+
+<footer>
+    <p>
+        &copy; Aquaponix 2024 Todos os direitos reservados. 
+    </p>
+</footer>
 </html>
 
 <script>
@@ -94,11 +120,12 @@
         </div>
         `;
 
-        economia.innerHTML = `  
+        economia.innerHTML = `
+        <div class = "msg2">
         <h2>Econômia Geral</h2>
         <p>Água Economizada: <span class="menor">${economia_agua}</span> litros</p>
         <p>Economia: <span class="menor">${economia_formatado}</span></p> 
-        `;
+        </div>`;
 
     }
 
