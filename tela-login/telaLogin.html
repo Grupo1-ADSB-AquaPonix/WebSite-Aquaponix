@@ -30,7 +30,7 @@
                         <ins>Login</ins>
                     </li>
                     <li>|</li>
-                    <a href="../tela-cadastro/telaCadastro.html">
+                    <a href="../cadastro/telaCadastro.html">
                         <li>
                             Cadastro
                         </li>
@@ -42,49 +42,25 @@
     <div class="container">
         <h1>Login</h1>
         <div class="login">
-                <input class="iptn" type="text" placeholder="E-mail ou CPF" id="iptn_email">
-                <input class="iptn" type="text" placeholder="Senha" id="iptn_senha">
-                <div class="reset">
-                   <div>
+            <input class="input" type="text" placeholder="E-mail" id="input_email">
+            <input class="input" type="password" placeholder="Senha" id="input_senha">
+            <div class="reset">
+                <div>
                     <input class="caixa" type="checkbox"> <strong>Lembrar minha senha</strong>
-                   </div> 
-                    <strong>Esquece sua senha?</strong>
                 </div>
+                <strong>Esquece sua senha?</strong>
+            </div>
             <div class="botoes">
-                <button class="btn"><strong>Cadastro</strong></button>
-                <button class="btn2"><strong>Login</strong></button>
+                <a href="../cadastro/telaCadastro.html"><button class="btn">Cadastro</button></a>
+                <button class="btn2" onclick="validaLogin()">Login</button>
             </div>
         </div>
     </div>
     <footer>
         <span>
-             Aquaponix &copy; 2024 Todos os direitos reservados.
+            Aquaponix &copy; 2024 Todos os direitos reservados.
         </span>
     </footer>
-
+    <script src="./validaLogin.js"></script>
 </body>
-<script>
-    function Login(){
-
-        var email = iptn_email.value;
-        var senha = iptn_senha.value;
-
-        var contarArroba = 0;
-        for(var i = 0; i < email.length; i++){
-            if(email[i] == "@"){
-                contarArroba++
-            }
-        }
-        
-        if(contArroba > 1){
-            alert('O email só pode ter um @')
-        } else if(email.indexOf(".") == -1){
-            alert('Este email é inválido');
-        } else if(senha.length < 8){
-            alert('Senha precisa ter no minímo 8 caracteres');
-        } else if(senha.indexOf("!") == -1 && senha.indexOf("#") == -1 && senha.indexOf("$") == -1){
-            alert('A senha precisa conter um caracter especial')
-        }
-    }
-</script>
 </html>

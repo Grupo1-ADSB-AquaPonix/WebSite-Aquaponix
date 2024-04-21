@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Continuar Cadastro</title>
-    <link rel="stylesheet" href="./continuarCadastro.css">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="./telaCadastro.css">
     <link rel="stylesheet" href="../templateNavBar.css">
     <link rel="stylesheet" href="../templateFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav id="navBar" style="position: relative;">
         <div class="logoEmpresa">
             <h1><a href="../home.html">AQUAPONIX</a></h1>
         </div>
@@ -24,32 +24,34 @@
                     </a>
                     <li>|</li>
                     <li style="font-weight: bolder; color: black;">
-                        <ins>Cadastro</ins>
+                        <ins>Cadastro</ins> 
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <article>
-        <div class="box-form">
+        <div class="container-formulario">
             <div class="box-title">
-                <h2 id="div_title">ENDEREÇO EMPRESARIAL</h2>
+                <h2 id="div_title">Cadastro Empresarial</h2>
             </div>
-            <div class="formulario">
-                <input type="text" placeholder="CEP">
-                <input type="text" placeholder="Nùmero">
-                <input type="text" placeholder="Complemento">
-                <div class="div-buttons">
-                <a href="./telaCadastro.html"><button class="btn-voltar">VOLTAR</button></a>
-                <button class="btn-criarConta">CRIAR CONTA</button>
-                </div>
-            </div>
+            <div class="box-form" id="div_form">
+                <input type="text" id="input_nomeEmpresa" placeholder="* Nome da empresa">
+                <input type="text" id="input_email" placeholder="* E-mail">
+                <input type="text" id="input_cnpj" placeholder="* CNPJ">
+                <input type="text" id="input_telefone1" placeholder="* Telefone Fixo ou Celular">
+                <input type="text" id="input_telefone2" placeholder="Telefone Fixo ou Celular">
+                <input type="password" id="input_senha" placeholder="* Senha">
+                <input type="password" id="input_confirmSenha" placeholder="* Confirmar senha">
+                <button class="btn-criarconta" onclick="validaCadastro()">Continuar</button>
         </div>
     </article>
     <footer>
-        <p>
+        <span>
             &copy; Aquaponix 2024 Todos os direitos reservados. 
-        </p>
+        </span>
     </footer>
+
+    <script src="./validaCadastro.js"></script>
 </body>
 </html>
