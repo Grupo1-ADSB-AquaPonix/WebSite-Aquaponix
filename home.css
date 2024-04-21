@@ -344,21 +344,22 @@ body {
 }
 
 .box-formulario-email button{
-    height: 10%;
-    width: 30%;
-    border: none;
-    outline: none;
+    height: 50px;
+    width: 200px;
     cursor: pointer;
-    border-radius: 8px;
+    border: none;
+    border-radius: 30px;
     color: white;
-    font-weight: bold;
-    background-color: #026773;
+    font-size: 16px;
+    background-color: #0e420c;
 }
 
 .box-formulario-email button:hover{
     transition: 0.2s;
     transform: scale(1.02);
-    background-color: #015058;
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #0e420c;
 }
 
 .box-formulario-email button:active{
