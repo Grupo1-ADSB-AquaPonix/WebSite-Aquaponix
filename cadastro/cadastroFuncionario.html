@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Cadastro</title>
-    <link rel="stylesheet" href="./telaCadastro.css">
+    <link rel="stylesheet" href="./telaCadastroFuncionario.css">
     <link rel="stylesheet" href="../templateNavBar.css">
     <link rel="stylesheet" href="../templateFooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,18 +33,15 @@
     <article>
         <div class="container-formulario">
             <div class="box-title">
-                <h2 id="div_title">Cadastro Empresarial</h2>
+                <h2 id="div_title">Cadastro de Funcionário</h2>
             </div>
             <div class="box-form" id="div_form">
-                <input type="text" id="input_nomeEmpresa" placeholder="* Nome da empresa">
-                <span id="span_nome"></span>
+                <input type="text" id="input_nomeFuncionario" placeholder="* Nome do Funcionário">
                 <input type="text" id="input_email" placeholder="* E-mail">
-                <input type="text" id="input_cnpj" placeholder="* CNPJ">
-                <input type="text" id="input_telefone1" placeholder="* Telefone Fixo ou Celular">
-                <input type="text" id="input_telefone2" placeholder="Telefone Fixo ou Celular">
+                <input type="text" id="input_telefone" placeholder="* Telefone Celular">
                 <input type="password" id="input_senha" placeholder="* Senha">
                 <input type="password" id="input_confirmSenha" placeholder="* Confirmar senha">
-                <button class="btn-criarconta" onclick="validaCadastro()">Continuar</button>
+                <button class="btn-criarconta" onclick="validaFuncionario()">Criar Conta</button>
         </div>
     </article>
     <footer>
