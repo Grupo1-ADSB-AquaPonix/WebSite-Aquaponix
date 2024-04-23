@@ -27,7 +27,7 @@ function validaCadastro() {
         alert('CNPJ inválido');
     } else if (senha.length < 6) {
         alert('Senha precisa ter no minímo 6 caracteres');
-    } else if (senha.indexOf("!") == -1 && senha.indexOf("#") == -1 && senha.indexOf("$") == -1 && senha.indexOf('@') == -1 && senha.indexOf('%') == -1) {
+    } else if (senha.indexOf("!") == -1 && senha.indexOf("#") == -1 && senha.indexOf("$") == -1 && senha.indexOf('@') == -1 && senha.indexOf('%') == -1 && senha.indexOf('*') == -1) {
         alert('A senha precisa conter um caracter especial')
     } else if (confirmSenha !== senha) {
         alert('As senhas não coincidem')
@@ -69,18 +69,25 @@ function validaFuncionario() {
 
     if (nomeFuncionario == '' || email == '' || telefone == '' || senha == '' || confirmSenha == '') {
         alert('Complete todos os campos obrigatórios')
+
     } else if (nomeFuncionario.length < 1) {
         alert('Nome Inválido')
+
     } else if (contArroba > 1) {
         alert('O email só pode ter um @')
+
     } else if (email.indexOf(".") == -1) {
         alert('Email inválido');
+
     } else if (senha.length < 5) {
         alert('Senha precisa ter no minímo 5 caracteres');
-    } else if (senha.indexOf("!") == -1 && senha.indexOf("#") == -1 && senha.indexOf("$") == -1 && senha.indexOf('@') == -1 && senha.indexOf('%') == -1) {
+
+    } else if (senha.indexOf("!") == -1 && senha.indexOf("#") == -1 && senha.indexOf("$") == -1 && senha.indexOf('@') == -1 && senha.indexOf('%') == -1 && senha.indexOf('*') == -1) {
         alert('A senha precisa conter um caracter especial')
+
     } else if (confirmSenha !== senha) {
         alert('As senhas não coincidem')
+        
     } else {
         window.open('../dashboard/painel.html')
     }
