@@ -19,7 +19,7 @@ article{
 }
 
 #links2{
-    width: 90%;
+    width: 80%;
 }
 
 .container-formulario{
@@ -33,7 +33,7 @@ article{
 }
 
 .box-form{
-    height: 80%;
+    /* height: 80%; */
     width: 80%;
     display: flex;
     gap: 40px;

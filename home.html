@@ -105,8 +105,8 @@
         </div>
         <div class="box-mandar-email">
             <div class="box-formulario-email">
-                <input type="text" placeholder="Seu nome">
-                <input type="text" placeholder="Seu email">
+                <input type="text" id="input_nome" placeholder="Seu nome">
+                <input type="text" id="input_email" placeholder="Seu email">
                 <textarea cols="30" rows="10" placeholder="Sua mensagem" id="textArea_mensagem"></textarea>
                 <button onclick="mensagem()">Enviar Mensagem </button>
             </div>
@@ -123,6 +123,14 @@
 
 <script>
     function mensagem(){
-    alert(`Mensagem enviada!!`)
+        var nome = document.getElementById('input_nome').value;
+        var email = document.getElementById('input_email').value;
+        var mensagem = document.getElementById('textArea_mensagem').value;
+
+        if (nome == '' || email == '' || mensagem == ''){
+            alert('Preencha os campos para enviar sua mensagem')
+        } else{
+            alert('Mensagem Enviada!')
+        }
     }
 </script>
