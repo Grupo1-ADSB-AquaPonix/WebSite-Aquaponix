@@ -49,6 +49,8 @@ function validaEndereco() {
     } else if (complemento == '') {
         alert('Insira um complemento')
     } else {
+
+        alert('Cadastro realizado!')
         window.location.href = ('../tela-login/telaLogin.html')
     }
 }
@@ -89,6 +91,8 @@ function validaFuncionario() {
         alert('As senhas não coincidem')
         
     } else {
+        
+        alert("Cadastro realizado!")
         window.location.href = ('../dashboard/painel.html')
     }
 }
