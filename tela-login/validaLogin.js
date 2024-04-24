@@ -5,7 +5,7 @@ function validaLogin() {
     if(email.indexOf('@') == -1 || senha.length < 6){
         alert('Email ou senha incorretos')
     } else {
-        window.open('../dashboard/painel.html')
+        window.location.href = ('../dashboard/painel.html')
     }
     
 }

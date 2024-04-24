@@ -32,7 +32,7 @@ function validaCadastro() {
     } else if (confirmSenha !== senha) {
         alert('As senhas não coincidem')
     } else {
-        window.open('./continuarCadastro.html')
+        window.location.href = ('./continuarCadastro.html')
     }
 }
 
@@ -49,7 +49,7 @@ function validaEndereco() {
     } else if (complemento == '') {
         alert('Insira um complemento')
     } else {
-        window.open('../tela-login/telaLogin.html')
+        window.location.href = ('../tela-login/telaLogin.html')
     }
 }
 
@@ -89,6 +89,6 @@ function validaFuncionario() {
         alert('As senhas não coincidem')
         
     } else {
-        window.open('../dashboard/painel.html')
+        window.location.href = ('../dashboard/painel.html')
     }
 }
